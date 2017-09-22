@@ -3,6 +3,7 @@ import {
      AppRegistry,
      StyleSheet,
      Text,
+     Image,
      View,
      TouchableOpacity,
      ScrollView,
@@ -40,8 +41,11 @@ export default class art extends Component {
                                         <Text>{image.name}</Text>
                                    </View>
                                    {/* Back Side */}
+
                                    <View style={styles.back}>
-                                        <Text>{image.description}</Text>
+                                        <Image style={styles.image} source={{
+                                             uri: image.uri
+                                        }}/>
                                    </View>
                               </FlipCard>
                          </View>
@@ -51,7 +55,6 @@ export default class art extends Component {
           }).catch(function(err) {
                alert(err);
           });
-
      }
 
      render() {
@@ -92,6 +95,11 @@ const styles = StyleSheet.create({
           backgroundColor: 'steelblue',
           justifyContent: 'center',
           alignItems: 'center'
+     },
+
+     image: {
+          width: (Dimensions.get('window').width) / 4,
+          height: (Dimensions.get('window').width) / 4
      }
 });
 
