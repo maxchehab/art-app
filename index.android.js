@@ -2,21 +2,23 @@ import React, {Component} from 'react';
 import {
      AppRegistry,
      StyleSheet,
-     Text,
-     Image,
      View,
+     Text,
+     Button,
      TouchableOpacity,
+     TouchableHighlight,
      ScrollView,
      Dimensions
 } from 'react-native';
 
 import Card from './components/card/Card.js'
+import AppBar from './components/appbar/AppBar.js'
+
 
 export default class art extends Component {
 
      constructor(props) {
-          super(props)
-
+          super(props);
           this.state = {
                loading: true,
                images: []
@@ -39,12 +41,9 @@ export default class art extends Component {
 
      render() {
           return (
-               <View style={{
-                    flex: 1
-               }}>
-                    <ScrollView style={{
-                         flex: 1
-                    }}>
+               <View>
+                    <AppBar rightText="Reset" centerText="Home" leftText="Exit"/>
+                    <ScrollView>
                          <View style={styles.container}>{this.state.images}</View>
                     </ScrollView>
                </View>
@@ -57,7 +56,7 @@ const styles = StyleSheet.create({
           flex: 1,
           flexDirection: 'row',
           flexWrap: 'wrap'
-     }
+     },
 });
 
 AppRegistry.registerComponent('art', () => art);

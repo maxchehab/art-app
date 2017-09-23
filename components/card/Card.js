@@ -6,7 +6,6 @@ import {
      Image,
      View,
      TouchableOpacity,
-     ScrollView,
      Dimensions
 } from 'react-native';
 
@@ -14,7 +13,7 @@ import FlipCard from 'react-native-flip-card';
 
 export default class Card extends Component {
      constructor(props) {
-          super(props)
+          super(props);
      }
 
      render() {
@@ -23,12 +22,9 @@ export default class Card extends Component {
                     <FlipCard flip={false} friction={6} perspective={1000} flipHorizontal={true} flipVertical={false} clickable={true} style={styles.card} onFlipEnd={(isFlipEnd) => {
                          console.log('isFlipEnd', isFlipEnd)
                     }}>
-                         {/* Face Side */}
                          <View style={styles.face}>
                               <Text>{this.props.name}</Text>
                          </View>
-                         {/* Back Side */}
-
                          <View style={styles.back}>
                               <Image style={styles.image} source={{
                                    uri: this.props.uri
