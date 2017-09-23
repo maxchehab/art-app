@@ -6,6 +6,12 @@ import Card from '../card/Card.js';
 export default class GameBard extends Component {
      constructor(props) {
           super(props);
+          this.state = {
+               images: this.generateImages()
+          }
+     }
+
+     generateImages() {
           //var images = require('../../assets/dynamic/images.json');
           var images = [
                0,
@@ -39,9 +45,12 @@ export default class GameBard extends Component {
           for (var i = 0; i < images.length; i++) {
                Images.push(<Card key={i} source={images[i]}/>)
           }
-          this.state = {
-               images: Images
-          }
+
+          return Images;
+     }
+
+     reset() {
+          this.setState({images: this.generateImages()});
      }
 
      render() {
@@ -50,6 +59,13 @@ export default class GameBard extends Component {
                     <View style={styles.container}>{this.state.images}</View>
                </ScrollView>
           );
+     }
+
+     componentDidMount() {
+          this.props.onRef(this)
+     }
+     componentWillUnmount() {
+          this.props.onRef(undefined)
      }
 }
 

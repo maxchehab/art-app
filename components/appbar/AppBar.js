@@ -9,9 +9,9 @@ export default class AppBar extends Component {
      render() {
           return (
                <View style={styles.header}>
-                    <Text style={styles.title}>{this.props.leftText}</Text>
-                    <Text style={styles.title}>{this.props.centerText}</Text>
-                    <Text style={styles.title}>{this.props.rightText}</Text>
+                    <Text onPress={this.props.onLeftPress} style={styles.title}>{this.props.leftText}</Text>
+                    <Text onPress={this.props.onCenterPress} style={styles.title}>{this.props.centerText}</Text>
+                    <Text onPress={this.props.onRightPress} style={styles.title}>{this.props.rightText}</Text>
                </View>
           );
      }

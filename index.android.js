@@ -23,14 +23,18 @@ export default class art extends Component {
           }
      }
 
+     reset = () => {
+          this.gameBoard.reset();
+     }
+
      render() {
+
           var output = (
                <View>
-                    <AppBar rightText="Reset" centerText="Home" leftText="Exit"/>
-                    <GameBoard/>
+                    <AppBar onRightPress={this.reset} rightText="Reset" centerText="Home" leftText="Exit"/>
+                    <GameBoard onRef={ref => (this.gameBoard = ref)}/>
                </View>
           );
-
           return (output);
 
      }
