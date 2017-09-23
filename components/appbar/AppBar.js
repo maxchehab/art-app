@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
      },
      title: {
           fontSize: 18,
-          margin: 16,
+          padding: 16,
           color: "#2196f3",
           fontFamily: "Robot"
      }
