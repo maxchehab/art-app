@@ -8,7 +8,6 @@ import {
      TouchableOpacity,
      TouchableHighlight,
      ScrollView,
-     Dimensions
 } from 'react-native';
 
 import Card from './components/card/Card.js'

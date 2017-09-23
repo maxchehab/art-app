@@ -22,11 +22,11 @@ export default class Card extends Component {
                     <FlipCard flip={false} friction={6} perspective={1000} flipHorizontal={true} flipVertical={false} clickable={true} style={styles.card} onFlipEnd={(isFlipEnd) => {
                          console.log('isFlipEnd', isFlipEnd)
                     }}>
-                         <View style={styles.face}>
-                              <Text>{this.props.name}</Text>
+                         <View style={styles.front}>
+                              <Image style={styles.frontImage} source={require('../../assets/question.png')}/>
                          </View>
                          <View style={styles.back}>
-                              <Image style={styles.image} source={{
+                              <Image style={styles.backImage} source={{
                                    uri: this.props.uri
                               }}/>
                          </View>
@@ -38,16 +38,18 @@ export default class Card extends Component {
 
 const styles = StyleSheet.create({
      card: {
-          margin: 0,
-          height: (Dimensions.get('window').width) / 4,
-          width: (Dimensions.get('window').width) / 4
+          height: ((Dimensions.get('window').width) / 4),
+          width: ((Dimensions.get('window').width) / 4)
      },
-     face: {
+     front: {
+          padding:5,
+          borderRadius: 5,
+          borderWidth: 1,
+          borderColor:"white",
           flex: 1,
           backgroundColor: 'powderblue',
           justifyContent: 'center',
           alignItems: 'center'
-
      },
      back: {
           flex: 1,
@@ -56,9 +58,20 @@ const styles = StyleSheet.create({
           alignItems: 'center'
      },
 
-     image: {
-          width: (Dimensions.get('window').width) / 4,
-          height: (Dimensions.get('window').width) / 4
+     backImage: {
+          borderRadius: 5,
+          borderWidth: 1,
+          borderColor:"white",
+          flex: 1,
+          justifyContent: "center",
+          resizeMode: 'cover',
+          aspectRatio: 1
+     },
+     frontImage: {
+          flex: 1,
+          justifyContent: "center",
+          resizeMode: 'contain',
+          aspectRatio: 1
      }
 });
 
