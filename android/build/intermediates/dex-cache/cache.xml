@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.48.3\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_eabecc582e3e9f8a3c5ad7583ab0aa4e5772ed13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.fresco\animated-base\1.5.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cdf7493923bc608dadd034f2558be5c07aad19ab">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-animated-base-1.5.0_ba1a3ad8b5f870fce1ad17bb09c93b259831f524.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_229bce4431866f2ad60c6e7ed57c79b23e2dd6fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.48.3\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="56d3e81fee5f47a7a12ab65f4620f580c9c71d1e">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.48.3_395228493838e285782be8bb3ac56de866c9b415.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1_bc0ed3f7394ff8c65e84e50247566a4d7f80100c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_f027ca2f8bbd65e5ce7e3947719c4f24ee8ee0b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.5.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="da8b8f3f1fed75b39f0b9228bea5512f10bfff6f">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.5.0_74de6b53e3e920e85f76cac96ceb02b13257dc76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.5.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1c6d36281ce1c28ebeb58155c3ceac425dcec5e2">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.5.0_078044daa82f7d605a0ce2ca611b0cacee063e0f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_4de8026d7ece43235ff4b5c0d439ad8540649725.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_9949e3b08d488ae9fabf2e56fec7ccc6346a9898.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.5.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9602d1e79216cd0e61d22fad40caee64365f29ac">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.5.0_f366b9d3261d6763e4b38f9120fa4988e28f781e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_dfe44a08e47bbaf26a5bed2fee1976224d24784e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_e27127594364a8edf1ac1c0464399ebdfdded24d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_aa45076f317c1c7f4abad7bb243116a3f3db3272.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.fresco\animated-drawable\1.5.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ef9622fcbd4baf54f4c6ac3d2cd0c601b248da25">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-animated-drawable-1.5.0_b1afc621388cef9300b078b610e409bb891d88b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_15f2e31da7e6dde59c8adccafd4fc87fe520f564.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.5.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9644834bb403cfd73f5695b908a933c1ff236217">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.5.0_47d3c698df0b68f3a3d14dc8fc86f37d2515d73c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_cd702317ea27a15d1ca570448b2adb3b578b1210.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_51860a1b922322a50a746a57caff1f17b4129d6b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.fresco\animated-gif\1.5.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b3949978d5c50bc27d8077d67622a3f9a580dee4">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-animated-gif-1.5.0_b0076a0dfa694e2c2059b2384e76d103dfba5301.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_41aca17f4e83bdeca7bf3783b2261b32c7b3c25a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.5.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8bf2709be142a2d0784d5e548842026dc28079dc">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.5.0_84dacf0e31c7e39d7727c2e220fcf2ecaf3d4159.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_5ff6591a0aada6dcd78990fd778dfdfd52dd6551.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\maxch\Projects\art\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\maxch\Projects\art\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1_324d1fc3c990aa71d367a48f3033c9aa6ffe746a.jar" />
+    </item>
+
+</items>

@@ -14,21 +14,32 @@ import FlipCard from 'react-native-flip-card';
 export default class Card extends Component {
      constructor(props) {
           super(props);
+
+
      }
 
      render() {
+          let images = [
+               require("../../assets/dynamic/afremov.jpg"),
+               require("../../assets/dynamic/gothic.jpg"),
+               require("../../assets/dynamic/mona-lisa.jpg"),
+               require("../../assets/dynamic/saturn.png"),
+               require("../../assets/dynamic/scream.jpg"),
+               require("../../assets/dynamic/self-portrait.jpg"),
+               require("../../assets/dynamic/seurat.jpg"),
+               require("../../assets/dynamic/van-gough.gif")
+          ];
+
           return (
                <View>
-                    <FlipCard flip={false} friction={6} perspective={1000} flipHorizontal={true} flipVertical={false} clickable={true} style={styles.card} onFlipEnd={(isFlipEnd) => {
+                    <FlipCard flip={true} friction={6} perspective={1000} flipHorizontal={true} flipVertical={false} clickable={true} style={styles.card} onFlipEnd={(isFlipEnd) => {
                          console.log('isFlipEnd', isFlipEnd)
                     }}>
                          <View style={styles.front}>
-                              <Image style={styles.frontImage} source={require('../../assets/question.png')}/>
+                              <Image style={styles.frontImage} source={require('../../assets/static/question.png')}/>
                          </View>
                          <View style={styles.back}>
-                              <Image style={styles.backImage} source={{
-                                   uri: this.props.uri
-                              }}/>
+                              <Image style={styles.backImage} source={images[this.props.source]}/>
                          </View>
                     </FlipCard>
                </View>

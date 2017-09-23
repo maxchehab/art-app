@@ -4,49 +4,35 @@ import {
      StyleSheet,
      View,
      Text,
+     Image,
      Button,
      TouchableOpacity,
      TouchableHighlight,
-     ScrollView,
+     ScrollView
 } from 'react-native';
 
-import Card from './components/card/Card.js'
-import AppBar from './components/appbar/AppBar.js'
-
+import AppBar from './components/appbar/AppBar.js';
+import GameBoard from './components/gameboard/GameBoard.js';
 
 export default class art extends Component {
 
      constructor(props) {
           super(props);
           this.state = {
-               loading: true,
-               images: []
+               loading: false
           }
      }
 
-     componentDidMount() {
-          var that = this;
-          fetch("http://104.236.141.69/art/response.json", {method: 'get'}).then(function(response) {
-               return response.json();
-          }).then(function(json) {
-               let Images = json.images.map((image, key) => {
-                    return (<Card key={key} name={image.name} uri={image.uri}/>);
-               });
-               that.setState({images: Images, loading: false});
-          }).catch(function(err) {
-               alert(err);
-          });
-     }
-
      render() {
-          return (
+          var output = (
                <View>
                     <AppBar rightText="Reset" centerText="Home" leftText="Exit"/>
-                    <ScrollView>
-                         <View style={styles.container}>{this.state.images}</View>
-                    </ScrollView>
+                    <GameBoard/>
                </View>
           );
+
+          return (output);
+
      }
 }
 
@@ -55,7 +41,7 @@ const styles = StyleSheet.create({
           flex: 1,
           flexDirection: 'row',
           flexWrap: 'wrap'
-     },
+     }
 });
 
 AppRegistry.registerComponent('art', () => art);
