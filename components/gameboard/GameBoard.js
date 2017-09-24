@@ -11,6 +11,37 @@ export default class GameBard extends Component {
           }
      }
 
+     Game = {
+          firstSelection: -1,
+          secondSelection: -1,
+          firstCard: null,
+          secondCard: null
+     }
+
+     onFlipEnd(key, index, card) {
+          if (this.Game.firstSelection == -1) {
+               this.Game.firstSelection = key;
+               this.Game.firstCard = card;
+          } else if (this.Game.secondSelection == -1) {
+               this.Game.secondSelection = key;
+               this.Game.secondCard = card;
+          }
+
+          if (this.Game.firstSelection != -1 && this.Game.secondSelection != -1) {
+               if (this.Game.firstSelection == this.Game.secondSelection) {
+                    alert("Match!");
+               } else {
+                    alert("No Match!");
+                    this.Game.firstCard._toggleCard();
+                    this.Game.secondCard._toggleCard();
+               }
+
+               this.Game.firstSelection = -1;
+               this.Game.secondSelection = -1;
+          }
+
+     }
+
      generateImages() {
           //var images = require('../../assets/dynamic/images.json');
           var images = [
@@ -43,7 +74,7 @@ export default class GameBard extends Component {
 
           let Images = [];
           for (var i = 0; i < images.length; i++) {
-               Images.push(<Card key={i} source={images[i]}/>)
+               Images.push(<Card key={i} index={i} onFlipEnd={this.onFlipEnd.bind(this)} source={images[i]}/>)
           }
 
           return Images;

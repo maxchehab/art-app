@@ -14,8 +14,6 @@ import FlipCard from 'react-native-flip-card';
 export default class Card extends Component {
      constructor(props) {
           super(props);
-
-
      }
 
      render() {
@@ -32,8 +30,11 @@ export default class Card extends Component {
 
           return (
                <View>
-                    <FlipCard flip={true} friction={6} perspective={1000} flipHorizontal={true} flipVertical={false} clickable={true} style={styles.card} onFlipEnd={(isFlipEnd) => {
-                         console.log('isFlipEnd', isFlipEnd)
+                    <FlipCard ref={(card) => { this._card = card; }}  flip={false} friction={6} perspective={1000} flipHorizontal={true} flipVertical={false} clickable={true} style={styles.card} onFlipEnd={(isFlipEnd) => {
+                         if(isFlipEnd){
+                              this.props.onFlipEnd(this.props.source, this.props.index, this._card);
+                         }
+
                     }}>
                          <View style={styles.front}>
                               <Image style={styles.frontImage} source={require('../../assets/static/question.png')}/>
@@ -53,10 +54,10 @@ const styles = StyleSheet.create({
           width: ((Dimensions.get('window').width) / 4)
      },
      front: {
-          padding:5,
+          padding: 5,
           borderRadius: 5,
           borderWidth: 1,
-          borderColor:"white",
+          borderColor: "white",
           flex: 1,
           backgroundColor: 'powderblue',
           justifyContent: 'center',
@@ -72,7 +73,7 @@ const styles = StyleSheet.create({
      backImage: {
           borderRadius: 5,
           borderWidth: 1,
-          borderColor:"white",
+          borderColor: "white",
           flex: 1,
           justifyContent: "center",
           resizeMode: 'cover',

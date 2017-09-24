@@ -24,7 +24,6 @@ export default class art extends Component {
      }
 
      render() {
-
           var output = (
                <View>
                     <AppBar onRightPress={() => {
@@ -34,7 +33,6 @@ export default class art extends Component {
                </View>
           );
           return (output);
-
      }
 }
 
