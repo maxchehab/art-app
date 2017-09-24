@@ -82,6 +82,10 @@ export default class GameBard extends Component {
 
      reset() {
           this.setState({images: this.generateImages()});
+          this.Game.firstSelection = -1;
+          this.Game.secondSelection = -1;
+          this.Game.firstCard = null;
+          this.Game.secondCard = null;
      }
 
      render() {
