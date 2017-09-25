@@ -12,34 +12,48 @@ export default class GameBard extends Component {
      }
 
      Game = {
-          firstSelection: -1,
-          secondSelection: -1,
-          firstCard: null,
-          secondCard: null
+          selection: -1,
+          selectCard: null
      }
 
-     onFlipEnd(key, index, card) {
-          if (this.Game.firstSelection == -1) {
-               this.Game.firstSelection = key;
-               this.Game.firstCard = card;
-          } else if (this.Game.secondSelection == -1) {
-               this.Game.secondSelection = key;
-               this.Game.secondCard = card;
-          }
+     CompletedCards = [];
 
-          if (this.Game.firstSelection != -1 && this.Game.secondSelection != -1) {
-               if (this.Game.firstSelection == this.Game.secondSelection) {
-                    alert("Match!");
+     compare(key, isFliped, card) {
+          if (isFliped) {
+               if (this.Game.selection == -1) {
+                    this.Game.selection = key;
+                    this.Game.selectCard = card;
                } else {
-                    alert("No Match!");
-                    this.Game.firstCard._toggleCard();
-                    this.Game.secondCard._toggleCard();
-               }
+                    if (this.Game.selection == key) {
+                         // alert("Match!");
+                         this.Game.selectCard.setState({clickable: false});
+                         card.setState({clickable: false});
+                         this.CompletedCards.push(this.Game.selectCard, card);
+                    } else {
+                         // alert("No Match!");
+                         this.Game.selectCard._toggleCard();
+                         card._toggleCard();
+                    }
 
-               this.Game.firstSelection = -1;
-               this.Game.secondSelection = -1;
+                    this.Game.selection = -1;
+                    this.Game.selectCard = null;
+               }
+          } else if (this.Game.selectCard == card && card.selected != true) {
+               this.Game.selectCard = null;
+               this.Game.selection = -1;
+          }
+     }
+
+     press(key, card) {
+          if (this.Game.selection == key && this.Game.selectCard != card) {
+               this.Game.selectCard.selected = true;
+               card._toggleCard();
           }
 
+          if(!card.selected){
+               card._toggleCard();
+               return;
+          }
      }
 
      generateImages() {
@@ -74,18 +88,23 @@ export default class GameBard extends Component {
 
           let Images = [];
           for (var i = 0; i < images.length; i++) {
-               Images.push(<Card key={i} index={i} onFlipEnd={this.onFlipEnd.bind(this)} source={images[i]}/>)
+               Images.push(<Card key={i} compare={this.press.bind(this)} clickable={true} index={i} onFlipEnd={this.compare.bind(this)} source={images[i]}/>)
           }
 
           return Images;
      }
 
      reset() {
+          for (var i = 0; i < this.CompletedCards.length; i++) {
+               this.CompletedCards[i].setState({clickable: true});
+               this.CompletedCards[i].selected = false;
+          }
+          this.CompletedCard = [];
+
           this.setState({images: this.generateImages()});
-          this.Game.firstSelection = -1;
-          this.Game.secondSelection = -1;
-          this.Game.firstCard = null;
-          this.Game.secondCard = null;
+          this.Game.selection = -1;
+          this.Game.selectCard = null;
+
      }
 
      render() {

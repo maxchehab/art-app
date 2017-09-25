@@ -30,11 +30,10 @@ export default class Card extends Component {
 
           return (
                <View>
-                    <FlipCard ref={(card) => { this._card = card; }}  flip={false} friction={6} perspective={1000} flipHorizontal={true} flipVertical={false} clickable={true} style={styles.card} onFlipEnd={(isFlipEnd) => {
-                         if(isFlipEnd){
-                              this.props.onFlipEnd(this.props.source, this.props.index, this._card);
-                         }
-
+                    <FlipCard source={this.props.source} ref={(card) => {
+                         this._card = card;
+                    }} flip={false} friction={6} compare={this.props.compare} perspective={1000} flipHorizontal={true} flipVertical={false} clickable={true} style={styles.card} onFlipEnd={(isFlipEnd) => {
+                         this.props.onFlipEnd(this.props.source, isFlipEnd, this._card);
                     }}>
                          <View style={styles.front}>
                               <Image style={styles.frontImage} source={require('../../assets/static/question.png')}/>
