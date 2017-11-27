@@ -38,7 +38,7 @@ export default class Card extends Component {
           <View style={styles.front}>
             <Image
               style={styles.frontImage}
-              source={require("../../assets/static/question.png")}
+              source={this.props.i % 2 ? question1 : question2}
             />
           </View>
           <View style={styles.back}>
@@ -52,6 +52,9 @@ export default class Card extends Component {
     );
   }
 }
+
+const question1 = require("../../assets/static/question1.png");
+const question2 = require("../../assets/static/question2.png");
 
 const styles = StyleSheet.create({
   card: {

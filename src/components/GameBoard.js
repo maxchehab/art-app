@@ -177,6 +177,7 @@ export default class GameBard extends Component {
               key={i}
               compare={that.press.bind(that)}
               clickable={true}
+              i={i}
               index={images[i].id}
               onFlipEnd={that.compare.bind(that)}
               source={images[i].source}
